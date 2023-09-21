@@ -1,0 +1,20 @@
+[package]
+name = "regchest"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+zingo-testutils = { git="https://github.com/zingolabs/zingolib.git", default-features=true, branch = "dev" }
+tokio = "1.32.0"
+
+[patch.crates-io]
+zcash_primitives = { git = "https://github.com/nuttycom/librustzcash.git", rev = "669e0797bff3b506984bd2851b22d9eae40a758a" }
+zcash_address = { git = "https://github.com/nuttycom/librustzcash.git", rev = "669e0797bff3b506984bd2851b22d9eae40a758a" }
+
+[profile.release]
+debug = false
+
+[profile.test]
+opt-level = 3
+debug = false
+

@@ -1,0 +1,16 @@
+[package]
+name = "regchest_utils"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+bollard = "0.14.0"
+futures = "0.3.28"
+
+[profile.release]
+debug = false
+
+[profile.test]
+opt-level = 3
+debug = false
+

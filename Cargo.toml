@@ -1,7 +1,0 @@
-[package]
-name = "zingo-regchest"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
-zingo-testutils = { git = "https://github.com/zingolabs/zingolib.git", version = "0.1.0" }
